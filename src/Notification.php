@@ -26,14 +26,20 @@ class Notification
 
     public function passingTests()
     {
-        $this->joliNotification->setBody('✅ Tests passed!');
+        $this->joliNotification
+            ->setBody('✅ Tests passed!')
+            ->setIcon(__DIR__ . '/../images/success.png')
+        ;
 
         $this->send();
     }
 
     public function failingTests()
     {
-        $this->joliNotification->setBody('❌ Tests failed!');
+        $this->joliNotification
+            ->setBody('❌ Tests failed!')
+            ->setIcon(__DIR__ . '/../images/fail.png')
+        ;
 
         $this->send();
     }
