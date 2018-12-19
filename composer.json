@@ -1,5 +1,5 @@
 {
-    "name": "spatie/phpunit-watcher",
+    "name": "tiixstone/phpunit-watcher",
     "description": "Automatically rerun PHPUnit tests when source code changes",
     "keywords": [
         "spatie",
